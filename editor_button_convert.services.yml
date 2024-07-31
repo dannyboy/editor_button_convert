@@ -1,0 +1,5 @@
+services:
+  editor_button_convert.button_link_attribute_converter:
+    class: Drupal\editor_button_convert\EventSubscriber\ButtonLinkAttributeConverter
+    tags:
+      - { name: event_subscriber }

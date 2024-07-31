@@ -1,0 +1,8 @@
+name: "CKEditor Button Convert"
+type: module
+description: "Modify old button link attributes to classes."
+core_version_requirement: ^10
+package: Inventive
+dependencies:
+  - drupal:ckeditor5
+  - drupal:filter
