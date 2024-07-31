@@ -1,0 +1,12 @@
+{
+  "name": "dannyboy/editor_button_convert",
+  "description": "A custom Drupal module to convert editor buttons.",
+  "type": "drupal-custom-module",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^10.0"
+  },
+  "extra": {
+    "installer-name": "editor_button_convert"
+  }
+}
