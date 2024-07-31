@@ -1,6 +1,6 @@
 # Editor Button Convert
 
-The Drupal product `editor_button_link` has no support for CKEditor5. This module simply converts any content that has the `data-drupal-button-link="button"` and `data-drupal-button-link-style` attrubites into classes so they remain as buttons once the `editor_button_link` module has been uninstalled.
+The Drupal product `editor_button_link` has no support for CKEditor5. This module simply converts any content that has the `data-drupal-button-link="button"` and `data-drupal-button-link-style` attributes into classes so they remain as buttons once the `editor_button_link` module has been uninstalled.
 
 ## Requirements
 
