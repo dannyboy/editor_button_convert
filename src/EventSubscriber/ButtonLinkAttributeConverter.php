@@ -4,6 +4,7 @@ namespace Drupal\editor_button_convert\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 /**
  * Event subscriber to modify link attributes.
@@ -26,6 +27,12 @@ class ButtonLinkAttributeConverter implements EventSubscriberInterface {
    */
   public function onKernelResponse(ResponseEvent $event) {
     $response = $event->getResponse();
+
+    // Ensure the response is not a BinaryFileResponse.
+    if ($response instanceof BinaryFileResponse) {
+      return;
+    }
+
     $content = $response->getContent();
 
     // Regular expression to match <a> tags and their attributes.
